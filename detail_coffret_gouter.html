@@ -1,13 +1,13 @@
 <!DOCTYPE html>
     <head>
-        <title>Coffret Goûter</title>
+        <title> Coffret Petit Déjeuner </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.118.2">
     </head>
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/heroes/">
 
     
 
@@ -16,7 +16,7 @@
 <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-      .bd-placeholder-img {
+.bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
         -webkit-user-select: none;
@@ -90,7 +90,7 @@
       }
 
       .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
+        display: block !important;     
       }
     </style>
 
@@ -113,7 +113,121 @@
       </symbol>
     </svg>
 
-<p>Page détails</p>
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    
+<main>
+  <h1 class="visually-hidden">Heroes examples</h1>
+
+  <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="croissantaubeurre.jpg">
+    <h1 class="display-5 fw-bold text-body-emphasis">Plat 1 : Cannelloni sauce rosée</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Ce plat est composé de pâtes.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      </div>
+    </div>
+  </div>
+
+  <div class="b-example-divider"></div>
+
+  <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="painauchocolat.jpg">
+    <h1 class="display-5 fw-bold text-body-emphasis">Pain au chocolat</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Les ingrédients : 500 g de farine, 1 cuillère à café de sel, 50 g de sucre en poudre, 25 g de levure fraîche de boulanger, 1 œuf
+50 g de beurre, 190 g d'eau, 20 bâtons de chocolat, 250 g de beurre pour le tourage de la pâte feuilletée, 1 jaune d'oeuf batu.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      </div>
+    </div>
+  </div>
+
+    <div class="b-example-divider"></div>
+    
+      <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="jus_d_orange.jpg">
+    <h1 class="display-5 fw-bold text-body-emphasis">Jus d'orange</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Retrouvez nos jus d'orange bio préssé.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      </div>
+    </div>
+  </div>
+
+    <div class="b-example-divider"></div>
+
+      <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="pate_a_tartiner.jpg">
+    <h1 class="display-5 fw-bold text-body-emphasis">Pâte à tartiner</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Voici nos pâtes à tartiner au goût chocolaté.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      </div>
+    </div>
+  </div>
+
+    <div class="b-example-divider"></div>
+
+      <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="pots_de_confitures.jpg">
+    <h1 class="display-5 fw-bold text-body-emphasis">Confitures</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Découvrez nos confitures à la fraise, à l'orange et à l'abricot.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      </div>
+    </div>
+  </div>
+
+    <div class="b-example-divider"></div>
+
+    <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="barre_de_chocolat.jpg">
+    <h1 class="display-5 fw-bold text-body-emphasis">Mini barre chocolaté</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Découvrez nos mini barres chocolatés fourrés au chocolat au lait.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      </div>
+    </div>
+  </div>
+
+    <div class="b-example-divider"></div>
+
+
+</main>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
-
