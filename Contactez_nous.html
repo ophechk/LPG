@@ -1,65 +1,103 @@
-<script type="text/javascript">
-    var PAYPLUG_DOMAIN = "https:\/\/secure.payplug.com";
-    var module_name = "payplug";
-    var payplug_ajax_url = "https:\/\/collection-t.com\/module\/payplug\/ajax";
-    var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"0,00\u00a0\u20ac"},"total_including_tax":{"type":"total","label":"Total TTC","amount":0,"value":"0,00\u00a0\u20ac"},"total_excluding_tax":{"type":"total","label":"Total HT :","amount":0,"value":"0,00\u00a0\u20ac"}},"subtotals":{"products":{"type":"products","label":"Sous-total","amount":0,"value":"0,00\u00a0\u20ac"},"discounts":null,"shipping":{"type":"shipping","label":"Livraison","amount":0,"value":""},"tax":null},"products_count":0,"summary_string":"0 articles","vouchers":{"allowed":1,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"id":1,"name":"Euro","iso_code":"EUR","iso_code_num":"978","sign":"\u20ac"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"Fran\u00e7ais (French)","iso_code":"fr","locale":"fr-FR","language_code":"fr","is_rtl":"0","date_format_lite":"d\/m\/Y","date_format_full":"d\/m\/Y H:i:s","id":1},"page":{"title":"","canonical":null,"meta":{"title":"Contactez-nous","description":"Utilisez notre formulaire pour nous contacter","keywords":"","robots":"index"},"page_name":"contact","body_classes":{"lang-fr":true,"lang-rtl":false,"country-FR":true,"currency-EUR":true,"layout-left-column":true,"page-contact":true,"tax-display-enabled":true},"admin_notifications":[]},"shop":{"name":"Collection T","logo":"https:\/\/collection-t.com\/img\/collection-t-logo-1610974532.jpg","stores_icon":"https:\/\/collection-t.com\/img\/logo_stores.png","favicon":"https:\/\/collection-t.com\/img\/favicon.ico"},"urls":{"base_url":"https:\/\/collection-t.com\/","current_url":"https:\/\/collection-t.com\/contactez-nous-information","shop_domain_url":"https:\/\/collection-t.com","img_ps_url":"https:\/\/collection-t.com\/img\/","img_cat_url":"https:\/\/collection-t.com\/img\/c\/","img_lang_url":"https:\/\/collection-t.com\/img\/l\/","img_prod_url":"https:\/\/collection-t.com\/img\/p\/","img_manu_url":"https:\/\/collection-t.com\/img\/m\/","img_sup_url":"https:\/\/collection-t.com\/img\/su\/","img_ship_url":"https:\/\/collection-t.com\/img\/s\/","img_store_url":"https:\/\/collection-t.com\/img\/st\/","img_col_url":"https:\/\/collection-t.com\/img\/co\/","img_url":"https:\/\/collection-t.com\/themes\/classic\/assets\/img\/","css_url":"https:\/\/collection-t.com\/themes\/classic\/assets\/css\/","js_url":"https:\/\/collection-t.com\/themes\/classic\/assets\/js\/","pic_url":"https:\/\/collection-t.com\/upload\/","pages":{"address":"https:\/\/collection-t.com\/adresse","addresses":"https:\/\/collection-t.com\/adresses","authentication":"https:\/\/collection-t.com\/authentification","cart":"https:\/\/collection-t.com\/panier","category":"https:\/\/collection-t.com\/index.php?controller=category","cms":"https:\/\/collection-t.com\/index.php?controller=cms","contact":"https:\/\/collection-t.com\/contactez-nous-information","discount":"https:\/\/collection-t.com\/bons-de-reduction","guest_tracking":"https:\/\/collection-t.com\/suivi-commande-invite","history":"https:\/\/collection-t.com\/historique-des-commandes","identity":"https:\/\/collection-t.com\/identite","index":"https:\/\/collection-t.com\/","my_account":"https:\/\/collection-t.com\/mon-compte","order_confirmation":"https:\/\/collection-t.com\/confirmation-commande","order_detail":"https:\/\/collection-t.com\/index.php?controller=order-detail","order_follow":"https:\/\/collection-t.com\/details-de-la-commande","order":"https:\/\/collection-t.com\/commande","order_return":"https:\/\/collection-t.com\/index.php?controller=order-return","order_slip":"https:\/\/collection-t.com\/avoirs","pagenotfound":"https:\/\/collection-t.com\/index.php?controller=pagenotfound","password":"https:\/\/collection-t.com\/mot-de-passe-oublie","pdf_invoice":"https:\/\/collection-t.com\/index.php?controller=pdf-invoice","pdf_order_return":"https:\/\/collection-t.com\/index.php?controller=pdf-order-return","pdf_order_slip":"https:\/\/collection-t.com\/index.php?controller=pdf-order-slip","prices_drop":"https:\/\/collection-t.com\/promotions","product":"https:\/\/collection-t.com\/index.php?controller=product","search":"https:\/\/collection-t.com\/recherche","sitemap":"https:\/\/collection-t.com\/plan-du-site","stores":"https:\/\/collection-t.com\/magasins","supplier":"https:\/\/collection-t.com\/fournisseurs","register":"https:\/\/collection-t.com\/authentification?create_account=1","order_login":"https:\/\/collection-t.com\/commande?login=1"},"alternative_langs":[],"theme_assets":"\/themes\/classic\/assets\/","actions":{"logout":"https:\/\/collection-t.com\/?mylogout="},"no_picture_image":{"bySize":{"small_default":{"url":"https:\/\/collection-t.com\/img\/p\/fr-default-small_default.jpg","width":98,"height":98},"cart_default":{"url":"https:\/\/collection-t.com\/img\/p\/fr-default-cart_default.jpg","width":125,"height":125},"home_default":{"url":"https:\/\/collection-t.com\/img\/p\/fr-default-home_default.jpg","width":250,"height":250},"medium_default":{"url":"https:\/\/collection-t.com\/img\/p\/fr-default-medium_default.jpg","width":452,"height":452},"large_default":{"url":"https:\/\/collection-t.com\/img\/p\/fr-default-large_default.jpg","width":800,"height":800}},"small":{"url":"https:\/\/collection-t.com\/img\/p\/fr-default-small_default.jpg","width":98,"height":98},"medium":{"url":"https:\/\/collection-t.com\/img\/p\/fr-default-home_default.jpg","width":250,"height":250},"large":{"url":"https:\/\/collection-t.com\/img\/p\/fr-default-large_default.jpg","width":800,"height":800},"legend":""}},"configuration":{"display_taxes_label":true,"display_prices_tax_incl":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":true},"quantity_discount":{"type":"discount","label":"Remise sur prix unitaire"},"voucher_enabled":1,"return_enabled":0},"field_required":[],"breadcrumb":{"links":[{"title":"Accueil","url":"https:\/\/collection-t.com\/"},{"title":"Contactez-nous","url":"https:\/\/collection-t.com\/contactez-nous-information"}],"count":2},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1699023614,"static_token":"72ad594ffff63936148779771dffa657","token":"46f30bfc85743f48c332b865f813f055","debug":false};
-    var prestashopFacebookAjaxController = "https:\/\/collection-t.com\/module\/ps_facebook\/Ajax";
-    var probance_wt = {"id":null,"wt_token":"YYSgx0PN2UwvLJU","id_type":"customer_email","id_product":"","api_url":"t4.my-probance.one","customer_prefix":"","product_prefix":"","debug":"0"};
-    var psemailsubscription_subscription = "https:\/\/collection-t.com\/module\/ps_emailsubscription\/subscription";
-  </script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic%7CItaliana:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" media="all">
-    <link rel="stylesheet" href="https://collection-t.com/themes/classic/assets/cache/theme-afc40b181.css" media="all">
+<!doctype html>
+<html lang="fr">
 
-    <style>
-/* Start custom CSS for heading, class: .elementor-element-7e81a95 */.elementor-2170101 .elementor-element.elementor-element-7e81a95:hover {
-text-decoration:underline #fff;
+  <head>
+    
+      
+  <meta charset="utf-8">
+
+
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+
+  <title>Contactez-nous</title>
+  <meta name="description" content="Utilisez notre formulaire pour nous contacter">
+  <meta name="keywords" content="">
+      
+        
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <link rel="icon" type="image/vnd.microsoft.icon" href="https://collection-t.com/img/favicon.ico?1610974532">
+  <link rel="shortcut icon" type="image/x-icon" href="https://collection-t.com/img/favicon.ico?1610974532">
+
+
+
+  
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+
+
+  	
+
+  <script type="text/javascript">
+        var PAYPLUG_DOMAIN = "https:\/\/secure.payplug.com";
+        var module_name = "payplug";
+        var payplug_ajax_url = "https:\/\/collection-t.com\/module\/payplug\/ajax";
+        var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"0,00\u00a0\u20ac"},"total_including_tax":{"type":"total","label":"Total TTC","amount":0,"value":"0,00\u00a0\u20ac"},"total_excluding_tax":{"type":"total","label":"Total HT :","amount":0,"value":"0,00\u00a0\u20ac"}},"subtotals":{"products":{"type":"products","label":"Sous-total","amount":0,"value":"0,00\u00a0\u20ac"},"discounts":null,"shipping":{"type":"shipping","label":"Livraison","amount":0,"value":""},"tax":null},"products_count":0,"summary_string":"0 articles","vouchers":{"allowed":1,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"id":1,"name":"Euro","iso_code":"EUR","iso_code_num":"978","sign":"\u20ac"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"Fran\u00e7ais (French)","iso_code":"fr","locale":"fr-FR","language_code":"fr","is_rtl":"0","date_format_lite":"d\/m\/Y","date_format_full":"d\/m\/Y H:i:s","id":1},"page":{"title":"","canonical":null,"meta":{"title":"Contactez-nous","description":"Utilisez notre formulaire pour nous contacter","keywords":"","robots":"index"},"page_name":"contact","body_classes":{"lang-fr":true,"lang-rtl":false,"country-FR":true,"currency-EUR":true,"layout-left-column":true,"page-contact":true,"tax-display-enabled":true},"admin_notifications":[]},"shop":{"name":"Collection T","logo":"https:\/\/collection-t.com\/img\/collection-t-logo-1610974532.jpg","stores_icon":"https:\/\/collection-t.com\/img\/logo_stores.png","favicon":"https:\/\/collection-t.com\/img\/favicon.ico"},"urls":{"base_url":"https:\/\/collection-t.com\/","current_url":"https:\/\/collection-t.com\/contactez-nous-information","shop_domain_url":"https:\/\/collection-t.com","img_ps_url":"https:\/\/collection-t.com\/img\/","img_cat_url":"https:\/\/collection-t.com\/img\/c\/","img_lang_url":"https:\/\/collection-t.com\/img\/l\/","img_prod_url":"https:\/\/collection-t.com\/img\/p\/","img_manu_url":"https:\/\/collection-t.com\/img\/m\/","img_sup_url":"https:\/\/collection-t.com\/img\/su\/","img_ship_url":"https:\/\/collection-t.com\/img\/s\/","img_store_url":"https:\/\/collection-t.com\/img\/st\/","img_col_url":"https:\/\/collection-t.com\/img\/co\/","img_url":"https:\/\/collection-t.com\/themes\/classic\/assets\/img\/","css_url":"https:\/\/collection-t.com\/themes\/classic\/assets\/css\/","js_url":"https:\/\/collection-t.com\/themes\/classic\/assets\/js\/","pic_url":"https:\/\/collection-t.com\/upload\/","pages":{"address":"https:\/\/collection-t.com\/adresse","addresses":"https:\/\/collection-t.com\/adresses","authentication":"https:\/\/collection-t.com\/authentification","cart":"https:\/\/collection-t.com\/panier","category":"https:\/\/collection-t.com\/index.php?controller=category","cms":"https:\/\/collection-t.com\/index.php?controller=cms","contact":"https:\/\/collection-t.com\/contactez-nous-information","discount":"https:\/\/collection-t.com\/bons-de-reduction","guest_tracking":"https:\/\/collection-t.com\/suivi-commande-invite","history":"https:\/\/collection-t.com\/historique-des-commandes","identity":"https:\/\/collection-t.com\/identite","index":"https:\/\/collection-t.com\/","my_account":"https:\/\/collection-t.com\/mon-compte","order_confirmation":"https:\/\/collection-t.com\/confirmation-commande","order_detail":"https:\/\/collection-t.com\/index.php?controller=order-detail","order_follow":"https:\/\/collection-t.com\/details-de-la-commande","order":"https:\/\/collection-t.com\/commande","order_return":"https:\/\/collection-t.com\/index.php?controller=order-return","order_slip":"https:\/\/collection-t.com\/avoirs","pagenotfound":"https:\/\/collection-t.com\/index.php?controller=pagenotfound","password":"https:\/\/collection-t.com\/mot-de-passe-oublie","pdf_invoice":"https:\/\/collection-t.com\/index.php?controller=pdf-invoice","pdf_order_return":"https:\/\/collection-t.com\/index.php?controller=pdf-order-return","pdf_order_slip":"https:\/\/collection-t.com\/index.php?controller=pdf-order-slip","prices_drop":"https:\/\/collection-t.com\/promotions","product":"https:\/\/collection-t.com\/index.php?controller=product","search":"https:\/\/collection-t.com\/recherche","sitemap":"https:\/\/collection-t.com\/plan-du-site","stores":"https:\/\/collection-t.com\/magasins","supplier":"https:\/\/collection-t.com\/fournisseurs","register":"https:\/\/collection-t.com\/authentification?create_account=1","order_login":"https:\/\/collection-t.com\/commande?login=1"},"alternative_langs":[],"theme_assets":"\/themes\/classic\/assets\/","actions":{"logout":"https:\/\/collection-t.com\/?mylogout="},"no_picture_image":{"bySize":{"small_default":{"url":"https:\/\/collection-t.com\/img\/p\/fr-default-small_default.jpg","width":98,"height":98},"cart_default":{"url":"https:\/\/collection-t.com\/img\/p\/fr-default-cart_default.jpg","width":125,"height":125},"home_default":{"url":"https:\/\/collection-t.com\/img\/p\/fr-default-home_default.jpg","width":250,"height":250},"medium_default":{"url":"https:\/\/collection-t.com\/img\/p\/fr-default-medium_default.jpg","width":452,"height":452},"large_default":{"url":"https:\/\/collection-t.com\/img\/p\/fr-default-large_default.jpg","width":800,"height":800}},"small":{"url":"https:\/\/collection-t.com\/img\/p\/fr-default-small_default.jpg","width":98,"height":98},"medium":{"url":"https:\/\/collection-t.com\/img\/p\/fr-default-home_default.jpg","width":250,"height":250},"large":{"url":"https:\/\/collection-t.com\/img\/p\/fr-default-large_default.jpg","width":800,"height":800},"legend":""}},"configuration":{"display_taxes_label":true,"display_prices_tax_incl":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":true},"quantity_discount":{"type":"discount","label":"Remise sur prix unitaire"},"voucher_enabled":1,"return_enabled":0},"field_required":[],"breadcrumb":{"links":[{"title":"Accueil","url":"https:\/\/collection-t.com\/"},{"title":"Contactez-nous","url":"https:\/\/collection-t.com\/contactez-nous-information"}],"count":2},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1699023614,"static_token":"72ad594ffff63936148779771dffa657","token":"46f30bfc85743f48c332b865f813f055","debug":false};
+        var prestashopFacebookAjaxController = "https:\/\/collection-t.com\/module\/ps_facebook\/Ajax";
+        var probance_wt = {"id":null,"wt_token":"YYSgx0PN2UwvLJU","id_type":"customer_email","id_product":"","api_url":"t4.my-probance.one","customer_prefix":"","product_prefix":"","debug":"0"};
+        var psemailsubscription_subscription = "https:\/\/collection-t.com\/module\/ps_emailsubscription\/subscription";
+      </script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic%7CItaliana:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" media="all">
+		<link rel="stylesheet" href="https://collection-t.com/themes/classic/assets/cache/theme-afc40b181.css" media="all">
+	
+		<style>
+	/* Start custom CSS for heading, class: .elementor-element-7e81a95 */.elementor-2170101 .elementor-element.elementor-element-7e81a95:hover {
+    text-decoration:underline #fff;
 }/* End custom CSS */
 /* Start custom CSS for shopping-cart, class: .elementor-element-c2f6aa8 */.panier span.elementor-button-icon:after {
-content: "Panier";
-text-transform: uppercase;
-color:#000;
+    content: "Panier";
+    text-transform: uppercase;
+    color:#000;
 }/* End custom CSS */
 /* Start custom CSS for shopping-cart, class: .elementor-element-6c78f11f */.elementor-2170101 .elementor-element.elementor-element-6c78f11f span.elementor-button-icon:after {
-content: "";
-text-transform: none;
-color:inherit;
+    content: "";
+    text-transform: none;
+    color:inherit;
 }/* End custom CSS */
 /* Start custom CSS for section, class: .elementor-element-c9b4595 */.footer a {
-color:#9d402a;
+    color:#9d402a;
 }
 
 .footer a:hover {
-text-decoration:underline;
+    text-decoration:underline;
 }/* End custom CSS */
-</style>
+	</style>
+	
 
 
+	<script>
+			var ceFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"2.5.11","urls":{"assets":"\/modules\/creativeelements\/views\/"},"productQuickView":0,"settings":{"general":{"elementor_global_image_lightbox":"1","elementor_enable_lightbox_in_editor":"yes","elementor_lightbox_enable_counter":"yes","elementor_lightbox_enable_zoom":"yes","elementor_lightbox_title_src":"title","elementor_lightbox_description_src":"caption"}},"post":{"id":0,"title":"TODO","excerpt":""}};
+		</script>
+        <link rel="preload" href="/modules/creativeelements/views/lib/ceicons/fonts/ceicons.woff2?fj664s"
+            as="font" type="font/woff2" crossorigin>
+                <link rel="preload" href="/modules/creativeelements/views/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0"
+            as="font" type="font/woff2" crossorigin>
+        <!--CE-JS-->
 
-<script>
-        var ceFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"2.5.11","urls":{"assets":"\/modules\/creativeelements\/views\/"},"productQuickView":0,"settings":{"general":{"elementor_global_image_lightbox":"1","elementor_enable_lightbox_in_editor":"yes","elementor_lightbox_enable_counter":"yes","elementor_lightbox_enable_zoom":"yes","elementor_lightbox_title_src":"title","elementor_lightbox_description_src":"caption"}},"post":{"id":0,"title":"TODO","excerpt":""}};
-    </script>
-    <link rel="preload" href="/modules/creativeelements/views/lib/ceicons/fonts/ceicons.woff2?fj664s"
-        as="font" type="font/woff2" crossorigin>
-            <link rel="preload" href="/modules/creativeelements/views/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0"
-        as="font" type="font/woff2" crossorigin>
-    <!--CE-JS-->
 
-
+  <script type="text/javascript">
+            //Recaptcha CallBack Function
+            var onloadCallback = function() {grecaptcha.render("captcha-box", {"theme" : "light", "sitekey" : "6Lf0XVUlAAAAANp-Zx23kUBfFFnELexrjTNNYOob"});};
+            </script><script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=" async defer></script>
 <script type="text/javascript">
-        //Recaptcha CallBack Function
-        var onloadCallback = function() {grecaptcha.render("captcha-box", {"theme" : "light", "sitekey" : "6Lf0XVUlAAAAANp-Zx23kUBfFFnELexrjTNNYOob"});};
-        </script><script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=" async defer></script>
-<script type="text/javascript">
-(window.gaDevIds=window.gaDevIds||[]).push('d6YPbH');
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	(window.gaDevIds=window.gaDevIds||[]).push('d6YPbH');
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-193351985-1', 'auto');
-                    ga('send', 'pageview');
-
-ga('require', 'ec');
+            ga('create', 'UA-193351985-1', 'auto');
+                        ga('send', 'pageview');
+    
+    ga('require', 'ec');
 </script>
 
 
@@ -67,161 +105,161 @@ ga('require', 'ec');
 
 
 
-
-</head>
-
-<body id="contact" class="lang-fr country-fr currency-eur layout-left-column page-contact tax-display-enabled">
-
-
-  
-
-
-<main>
-  
-          
-
-  <header id="header">
     
-                  <div data-elementor-type="header" data-elementor-id="2170101" class="elementor elementor-2170101" data-elementor-settings="[]">
-        <div class="elementor-section-wrap">        <section class="elementor-element elementor-element-232b54d elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="232b54d" data-element_type="section" id="#top" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                        <div class="elementor-container elementor-column-gap-no">
-                        <div class="elementor-row">
-            <div class="elementor-element elementor-element-aa27bb5 elementor-column elementor-col-100 elementor-top-column" data-id="aa27bb5" data-element_type="column">
-        <div class="elementor-column-wrap elementor-element-populated">
-            <div class="elementor-widget-wrap">
-            <div class="elementor-element elementor-element-7e81a95 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="7e81a95" data-element_type="widget" data-widget_type="heading.default">
-    <div class="elementor-widget-container"><span class="elementor-heading-title elementor-size-medium"><a href="#">Livraison offerte dès 70€ d'achat en France</a></span></div>        </div>
-                    </div>
-        </div>
-    </div>
-                    </div>
-        </div>
-    </section>
-            <section class="elementor-element elementor-element-cfadf90 elementor-section-content-middle elementor-hidden-tablet elementor-hidden-phone elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="cfadf90" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;animation&quot;:&quot;none&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}">
-                        <div class="elementor-container elementor-column-gap-no">
-                        <div class="elementor-row">
-            <div class="elementor-element elementor-element-445a6155 elementor-column elementor-col-100 elementor-top-column" data-id="445a6155" data-element_type="column">
-        <div class="elementor-column-wrap elementor-element-populated">
-            <div class="elementor-widget-wrap">
-            <section class="elementor-element elementor-element-414a1b4d elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="414a1b4d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                        <div class="elementor-container elementor-column-gap-default">
-                        <div class="elementor-row">
-            <div class="elementor-element elementor-element-4a1ae959 elementor-column elementor-col-33 elementor-inner-column" data-id="4a1ae959" data-element_type="column">
-        <div class="elementor-column-wrap elementor-element-populated">
-            <div class="elementor-widget-wrap">
-            <div class="elementor-element elementor-element-4af73cd7 elementor-search--skin-topbar elementor-widget__width-auto elementor-widget-mobile__width-auto elementor-widget elementor-widget-ajax-search" data-id="4af73cd7" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;topbar&quot;,&quot;list_limit&quot;:10,&quot;show_image&quot;:&quot;yes&quot;,&quot;show_category&quot;:&quot;yes&quot;,&quot;show_price&quot;:&quot;yes&quot;}" data-widget_type="ajax-search.default">
-    <div class="elementor-widget-container">        <form class="elementor-search" role="search"
-        action="https://collection-t.com/recherche" method="get">
-                        <div class="elementor-search__toggle">
-            <i class="ceicon-magnifier" aria-hidden="true"></i>
-            <span class="elementor-screen-only">Recherche</span>
-        </div>
-                <div class="elementor-search__container">
-                        <div class="elementor-search__label">Que souhaitez-vous trouver ?</div>
-            <div class="elementor-search__input-wrapper">
-                        <input placeholder="Recherche..." class="elementor-search__input" type="search" name="s" value="">
-            <div class="elementor-search__icon elementor-search__clear"><i class="ceicon-close"></i></div>
+  </head>
+
+  <body id="contact" class="lang-fr country-fr currency-eur layout-left-column page-contact tax-display-enabled">
+
+    
+      
+    
+
+    <main>
+      
+              
+
+      <header id="header">
+        
+          	        <div data-elementor-type="header" data-elementor-id="2170101" class="elementor elementor-2170101" data-elementor-settings="[]">
+            <div class="elementor-section-wrap">        <section class="elementor-element elementor-element-232b54d elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="232b54d" data-element_type="section" id="#top" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                            <div class="elementor-container elementor-column-gap-no">
+                            <div class="elementor-row">
+                <div class="elementor-element elementor-element-aa27bb5 elementor-column elementor-col-100 elementor-top-column" data-id="aa27bb5" data-element_type="column">
+            <div class="elementor-column-wrap elementor-element-populated">
+                <div class="elementor-widget-wrap">
+                <div class="elementor-element elementor-element-7e81a95 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="7e81a95" data-element_type="widget" data-widget_type="heading.default">
+        <div class="elementor-widget-container"><span class="elementor-heading-title elementor-size-medium"><a href="#">Livraison offerte dès 70€ d'achat en France</a></span></div>        </div>
                         </div>
-            <div class="dialog-lightbox-close-button dialog-close-button">
-                <i class="ceicon-close" aria-hidden="true"></i>
-                <span class="elementor-screen-only">Fermer</span>
             </div>
-                    </div>
-    </form>
-    </div>        </div>
-            <div class="elementor-element elementor-element-65a9bb12 elementor-shape-square elementor-widget__width-auto elementor-widget elementor-widget-social-icons" data-id="65a9bb12" data-element_type="widget" data-widget_type="social-icons.default">
-    <div class="elementor-widget-container">        <div class="elementor-social-icons-wrapper">
-                <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-animation-shrink" href="https://www.facebook.com/collectionT.paris" target="_blank">
-            <span class="elementor-screen-only">Facebook</span>
-            <i class="fa fa-facebook"></i>
-        </a>
-                <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-animation-shrink" href="https://www.instagram.com/collection.t/?hl=fr" target="_blank">
-            <span class="elementor-screen-only">Instagram</span>
-            <i class="fa fa-instagram"></i>
-        </a>
-                <a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-animation-shrink" href="https://www.linkedin.com/company/collection-t/" target="_blank">
-            <span class="elementor-screen-only">Linkedin</span>
-            <i class="fa fa-linkedin"></i>
-        </a>
+        </div>
+                        </div>
             </div>
-    </div>        </div>
-                    </div>
-        </div>
-    </div>
-            <div class="elementor-element elementor-element-96fc0d8 elementor-column elementor-col-33 elementor-inner-column" data-id="96fc0d8" data-element_type="column">
-        <div class="elementor-column-wrap elementor-element-populated">
-            <div class="elementor-widget-wrap">
-            <div class="elementor-element elementor-element-6b2e571c elementor-widget elementor-widget-heading" data-id="6b2e571c" data-element_type="widget" data-widget_type="heading.default">
-    <div class="elementor-widget-container"><h2 class="elementor-heading-title elementor-size-default"><a href="https://collection-t.com/">Collection T.</a></h2></div>        </div>
-            <div class="elementor-element elementor-element-305ee466 elementor-widget elementor-widget-text-editor" data-id="305ee466" data-element_type="widget" data-widget_type="text-editor.default">
-    <div class="elementor-widget-container">        <div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">• Maison française de thé •</p></div>
-    </div>        </div>
-                    </div>
-        </div>
-    </div>
-            <div class="elementor-element elementor-element-4fb5249f elementor-column elementor-col-33 elementor-inner-column" data-id="4fb5249f" data-element_type="column">
-        <div class="elementor-column-wrap elementor-element-populated">
-            <div class="elementor-widget-wrap">
-            <div class="elementor-element elementor-element-4e80d496 elementor-widget__width-auto elementor-view-default elementor-widget elementor-widget-icon" data-id="4e80d496" data-element_type="widget" data-widget_type="icon.default">
-    <div class="elementor-widget-container">        <div class="elementor-icon-wrapper">
-        <a class="elementor-icon elementor-animation-shrink" href="https://collection-t.com/whislist-list">
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
-        </a>
-    </div>
-    </div>        </div>
-            <div class="elementor-element elementor-element-3b029aa7 elementor-widget__width-auto elementor-widget elementor-widget-sign-in elementor-widget-nav-menu" data-id="3b029aa7" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;,&quot;show_submenu_on&quot;:&quot;hover&quot;}" data-widget_type="sign-in.default">
-    <div class="elementor-widget-container">        <nav class="elementor-sign-in elementor-nav--main elementor-nav__container elementor-nav--layout-horizontal">        <ul id="usermenu-3b029aa7" class="elementor-nav">
-                <li class="menu-item menu-item-type-account menu-item-account-0">
-            <a class="elementor-item" href="https://collection-t.com/mon-compte">
-                                                <span>Connexion</span>
-                                            </a>
-                        </li>
-            </ul>
-    </nav>
-    </div>        </div>
-            <div class="elementor-element elementor-element-c2f6aa8 elementor-cart--empty-indicator-hide elementor-cart--buttons-stacked elementor-widget__width-auto panier elementor-cart--items-indicator-bubble elementor-cart--show-remove-button-yes elementor-widget elementor-widget-shopping-cart" data-id="c2f6aa8" data-element_type="widget" data-settings="{&quot;action_open_cart&quot;:&quot;yes&quot;}" data-widget_type="shopping-cart.default">
-    <div class="elementor-widget-container">        <div class="elementor-cart__wrapper">
-                    <div class="elementor-cart__container elementor-lightbox">
-            <div class="elementor-cart__main">
-                <div class="elementor-cart__close-button ceicon-close"></div>
-                <div class="elementor-cart__title">Votre panier</div>
-                        <div class="elementor-cart__empty-message">Vous n'avez aucun produit dans le chariot.</div>
-    <div class="elementor-cart__products" data-gift="Cadeau">
+        </section>
+                <section class="elementor-element elementor-element-cfadf90 elementor-section-content-middle elementor-hidden-tablet elementor-hidden-phone elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="cfadf90" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;animation&quot;:&quot;none&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}">
+                            <div class="elementor-container elementor-column-gap-no">
+                            <div class="elementor-row">
+                <div class="elementor-element elementor-element-445a6155 elementor-column elementor-col-100 elementor-top-column" data-id="445a6155" data-element_type="column">
+            <div class="elementor-column-wrap elementor-element-populated">
+                <div class="elementor-widget-wrap">
+                <section class="elementor-element elementor-element-414a1b4d elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="414a1b4d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                            <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-row">
+                <div class="elementor-element elementor-element-4a1ae959 elementor-column elementor-col-33 elementor-inner-column" data-id="4a1ae959" data-element_type="column">
+            <div class="elementor-column-wrap elementor-element-populated">
+                <div class="elementor-widget-wrap">
+                <div class="elementor-element elementor-element-4af73cd7 elementor-search--skin-topbar elementor-widget__width-auto elementor-widget-mobile__width-auto elementor-widget elementor-widget-ajax-search" data-id="4af73cd7" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;topbar&quot;,&quot;list_limit&quot;:10,&quot;show_image&quot;:&quot;yes&quot;,&quot;show_category&quot;:&quot;yes&quot;,&quot;show_price&quot;:&quot;yes&quot;}" data-widget_type="ajax-search.default">
+        <div class="elementor-widget-container">        <form class="elementor-search" role="search"
+            action="https://collection-t.com/recherche" method="get">
+                            <div class="elementor-search__toggle">
+                <i class="ceicon-magnifier" aria-hidden="true"></i>
+                <span class="elementor-screen-only">Recherche</span>
+            </div>
+                    <div class="elementor-search__container">
+                            <div class="elementor-search__label">Que souhaitez-vous trouver ?</div>
+                <div class="elementor-search__input-wrapper">
+                            <input placeholder="Recherche..." class="elementor-search__input" type="search" name="s" value="">
+                <div class="elementor-search__icon elementor-search__clear"><i class="ceicon-close"></i></div>
+                            </div>
+                <div class="dialog-lightbox-close-button dialog-close-button">
+                    <i class="ceicon-close" aria-hidden="true"></i>
+                    <span class="elementor-screen-only">Fermer</span>
                 </div>
-    <div class="elementor-cart__summary">
-        <div class="elementor-cart__summary-label">0 articles</div>
-        <div class="elementor-cart__summary-value">0,00 €</div>
-        <span class="elementor-cart__summary-label">Livraison</span>
-        <span class="elementor-cart__summary-value"></span>
-        <strong class="elementor-cart__summary-label">Total</strong>
-        <strong class="elementor-cart__summary-value">0,00 €</strong>
-    </div>
-    <div class="elementor-alert elementor-alert-warning elementor-hidden" role="alert">
-        <span class="elementor-alert-description"></span>
-    </div>
-    <div class="elementor-cart__footer-buttons">
-        <a href="//collection-t.com/panier?action=show" class="elementor-button elementor-button--view-cart elementor-size-md">
-            <span class="elementor-button-text">Voir le panier</span>
-        </a>
-        <a href="https://collection-t.com/commande" class="elementor-button elementor-button--checkout elementor-size-md  ce-disabled">
-            <span class="elementor-button-text">Acheter</span>
-        </a>
+                        </div>
+        </form>
+        </div>        </div>
+                <div class="elementor-element elementor-element-65a9bb12 elementor-shape-square elementor-widget__width-auto elementor-widget elementor-widget-social-icons" data-id="65a9bb12" data-element_type="widget" data-widget_type="social-icons.default">
+        <div class="elementor-widget-container">        <div class="elementor-social-icons-wrapper">
+                    <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-animation-shrink" href="https://www.facebook.com/collectionT.paris" target="_blank">
+                <span class="elementor-screen-only">Facebook</span>
+                <i class="fa fa-facebook"></i>
+            </a>
+                    <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-animation-shrink" href="https://www.instagram.com/collection.t/?hl=fr" target="_blank">
+                <span class="elementor-screen-only">Instagram</span>
+                <i class="fa fa-instagram"></i>
+            </a>
+                    <a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-animation-shrink" href="https://www.linkedin.com/company/collection-t/" target="_blank">
+                <span class="elementor-screen-only">Linkedin</span>
+                <i class="fa fa-linkedin"></i>
+            </a>
                 </div>
-                    </div>
+        </div>        </div>
+                        </div>
+            </div>
         </div>
-                    <div class="elementor-cart__toggle elementor-button-wrapper">
-            <a href="//collection-t.com/panier?action=show" class="elementor-button elementor-size-sm">
-                <span class="elementor-button-icon" data-counter="0">
-                    <i class="" aria-hidden="true"></i>
-                    <span class="elementor-screen-only">Panier</span>
-                </span>
-                <span class="elementor-button-text">0,00 €</span>
+                <div class="elementor-element elementor-element-96fc0d8 elementor-column elementor-col-33 elementor-inner-column" data-id="96fc0d8" data-element_type="column">
+            <div class="elementor-column-wrap elementor-element-populated">
+                <div class="elementor-widget-wrap">
+                <div class="elementor-element elementor-element-6b2e571c elementor-widget elementor-widget-heading" data-id="6b2e571c" data-element_type="widget" data-widget_type="heading.default">
+        <div class="elementor-widget-container"><h2 class="elementor-heading-title elementor-size-default"><a href="https://collection-t.com/">Collection T.</a></h2></div>        </div>
+                <div class="elementor-element elementor-element-305ee466 elementor-widget elementor-widget-text-editor" data-id="305ee466" data-element_type="widget" data-widget_type="text-editor.default">
+        <div class="elementor-widget-container">        <div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">• Maison française de thé •</p></div>
+        </div>        </div>
+                        </div>
+            </div>
+        </div>
+                <div class="elementor-element elementor-element-4fb5249f elementor-column elementor-col-33 elementor-inner-column" data-id="4fb5249f" data-element_type="column">
+            <div class="elementor-column-wrap elementor-element-populated">
+                <div class="elementor-widget-wrap">
+                <div class="elementor-element elementor-element-4e80d496 elementor-widget__width-auto elementor-view-default elementor-widget elementor-widget-icon" data-id="4e80d496" data-element_type="widget" data-widget_type="icon.default">
+        <div class="elementor-widget-container">        <div class="elementor-icon-wrapper">
+            <a class="elementor-icon elementor-animation-shrink" href="https://collection-t.com/whislist-list">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
             </a>
         </div>
-    </div>
-    </div>        </div>
+        </div>        </div>
+                <div class="elementor-element elementor-element-3b029aa7 elementor-widget__width-auto elementor-widget elementor-widget-sign-in elementor-widget-nav-menu" data-id="3b029aa7" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;,&quot;show_submenu_on&quot;:&quot;hover&quot;}" data-widget_type="sign-in.default">
+        <div class="elementor-widget-container">        <nav class="elementor-sign-in elementor-nav--main elementor-nav__container elementor-nav--layout-horizontal">        <ul id="usermenu-3b029aa7" class="elementor-nav">
+                    <li class="menu-item menu-item-type-account menu-item-account-0">
+                <a class="elementor-item" href="https://collection-t.com/mon-compte">
+                                                    <span>Connexion</span>
+                                                </a>
+                            </li>
+                </ul>
+        </nav>
+        </div>        </div>
+                <div class="elementor-element elementor-element-c2f6aa8 elementor-cart--empty-indicator-hide elementor-cart--buttons-stacked elementor-widget__width-auto panier elementor-cart--items-indicator-bubble elementor-cart--show-remove-button-yes elementor-widget elementor-widget-shopping-cart" data-id="c2f6aa8" data-element_type="widget" data-settings="{&quot;action_open_cart&quot;:&quot;yes&quot;}" data-widget_type="shopping-cart.default">
+        <div class="elementor-widget-container">        <div class="elementor-cart__wrapper">
+                        <div class="elementor-cart__container elementor-lightbox">
+                <div class="elementor-cart__main">
+                    <div class="elementor-cart__close-button ceicon-close"></div>
+                    <div class="elementor-cart__title">Votre panier</div>
+                            <div class="elementor-cart__empty-message">Vous n'avez aucun produit dans le chariot.</div>
+        <div class="elementor-cart__products" data-gift="Cadeau">
                     </div>
+        <div class="elementor-cart__summary">
+            <div class="elementor-cart__summary-label">0 articles</div>
+            <div class="elementor-cart__summary-value">0,00 €</div>
+            <span class="elementor-cart__summary-label">Livraison</span>
+            <span class="elementor-cart__summary-value"></span>
+            <strong class="elementor-cart__summary-label">Total</strong>
+            <strong class="elementor-cart__summary-value">0,00 €</strong>
         </div>
-    </div>
+        <div class="elementor-alert elementor-alert-warning elementor-hidden" role="alert">
+            <span class="elementor-alert-description"></span>
+        </div>
+        <div class="elementor-cart__footer-buttons">
+            <a href="//collection-t.com/panier?action=show" class="elementor-button elementor-button--view-cart elementor-size-md">
+                <span class="elementor-button-text">Voir le panier</span>
+            </a>
+            <a href="https://collection-t.com/commande" class="elementor-button elementor-button--checkout elementor-size-md  ce-disabled">
+                <span class="elementor-button-text">Acheter</span>
+            </a>
                     </div>
+                        </div>
+            </div>
+                        <div class="elementor-cart__toggle elementor-button-wrapper">
+                <a href="//collection-t.com/panier?action=show" class="elementor-button elementor-size-sm">
+                    <span class="elementor-button-icon" data-counter="0">
+                        <i class="" aria-hidden="true"></i>
+                        <span class="elementor-screen-only">Panier</span>
+                    </span>
+                    <span class="elementor-button-text">0,00 €</span>
+                </a>
+            </div>
         </div>
+        </div>        </div>
+                        </div>
+            </div>
+        </div>
+                        </div>
+            </div>
