@@ -158,28 +158,33 @@
        
     </div>	
   </div>
-<div id="center_column" class="center_column col-xs-12 col-sm-12"><h1 class="page-heading">Identifiez-vous</h1>
-	<div class="row">
-		<div class="col-xs-12 col-sm-6">
-		<form action="" method="post" id="create-account_form" class="box">
-		<h3 class="">Créez votre compte</h3>
-		<div class="form_content clearfix"><p>Saisissez votre adresse e-mail pour créer votre compte.</p></div>
-			<div class="alert alert-danger" id="create_account_error" style="display:none">	
-		</div>
-		<div class="form-group">
-		<label for="">Adresse e-mail</label> 
-		<input type="email" class="is_required validate account_input form-control" data-validate="isEmail" id="email_create" name="email_create" value="">
-		</div>
-		<div class="submit"> <input type="hidden" class="hidden" name="back" value="my-account">
-		<button class="btn btn-default button button-medium exclusive" type="submit" id="SubmitCreate" name="SubmitCreate">
-		<span> <i class="icon-user left"></i> Créez votre compte </span> </button> 
-		<input type="hidden" class="hidden" name="SubmitCreate" value="Créez votre compte"></div></div>
-		</form>
-	
-	</div>
-	</div>
-</main>
-		
+
+<div id="center_column" class="center_column col-xs-12 col-sm-12">
+  <h1 class="page-heading">Identifiez-vous</h1>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+    <form action="https://www.panierdugourmand.com/connexion" method="post" id="create-account_form" class="box">
+      <h3 class="page-subheading">Créez votre compte</h3>
+      <div class="form_content clearfix"><p>Saisissez votre adresse e-mail pour créer votre compte.</p>
+        <div class="alert alert-danger" id="create_account_error" style="display:none"></div><div class="form-group"> 
+          <label for="email_create">Adresse e-mail</label> 
+          <input type="email" class="is_required validate account_input form-control" data-validate="isEmail" id="email_create" name="email_create" value=""></div>
+          <div class="submit"> 
+            <input type="hidden" class="hidden" name="back" value="my-account"> 
+            <button class="btn btn-default button button-medium exclusive" type="submit" id="SubmitCreate" name="SubmitCreate"> 
+              <span> <i class="icon-user left"></i> Créez votre compte </span> </button> <input type="hidden" class="hidden" name="SubmitCreate" value="Créez votre compte"></div></div></form></div>
+              <div class="col-xs-12 col-sm-6"><form action="https://www.panierdugourmand.com/connexion" method="post" id="login_form" class="box">
+                <h3 class="page-subheading">Déjà inscrit?</h3><div class="form_content clearfix">
+                  <div class="form-group"> <label for="email">Adresse e-mail</label> 
+                    <input class="is_required validate account_input form-control" data-validate="isEmail" type="email" id="email" name="email" value=""></div>
+                    <div class="form-group"> 
+                      <label for="passwd">Mot de passe</label> 
+                      <input class="is_required validate account_input form-control" type="password" data-validate="isPasswd" id="passwd" name="passwd" value=""></div><p class="lost_password form-group">
+                        <a href="https://www.panierdugourmand.com/recuperation-mot-de-passe" title="Récupérez votre mot de passe" rel="nofollow">Mot de passe oublié ?</a></p>
+                        <p class="submit"> <input type="hidden" class="hidden" name="back" value="my-account"> <button type="submit" id="SubmitLogin" name="SubmitLogin" class="button btn btn-default button-medium"> 
+                          <span> <i class="icon-lock left"></i> Connexion </span>
+                         </button></p></div></form></div></div></div>
+
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
 
 
@@ -219,8 +224,5 @@
       </div>
     </div>
   </footer>
-	  
-  </body>
-</form>
 	
 </html>
